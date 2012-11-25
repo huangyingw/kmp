@@ -98,7 +98,7 @@ public class kmp {
 	// test client
 	public static void main(String[] args) {
 		String pat = "ababc";
-		String txt = "afdsfasababcfafasfs";
+		String txt = "afdfafdsfsasfasababcfafasfs";
 		char[] pattern = pat.toCharArray();
 		char[] text = txt.toCharArray();
 
