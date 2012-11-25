@@ -97,8 +97,8 @@ public class kmp {
 
 	// test client
 	public static void main(String[] args) {
-		String pat = args[0];
-		String txt = args[1];
+		String pat = "ababc";
+		String txt = "afdsfasababcfafasfs";
 		char[] pattern = pat.toCharArray();
 		char[] text = txt.toCharArray();
 
@@ -109,17 +109,16 @@ public class kmp {
 		int offset2 = kmp2.search(text);
 
 		// print results
-		StdOut.println("text:    " + txt);
-		System.out.println();
+		System.out.println("text:    " + txt);
 
-		StdOut.print("pattern: ");
+		System.out.print("pattern: ");
 		for (int i = 0; i < offset1; i++)
-			StdOut.print(" ");
-		StdOut.println(pat);
+			System.out.print(" ");
+		System.out.println(pat);
 
-		StdOut.print("pattern: ");
+		System.out.print("pattern: ");
 		for (int i = 0; i < offset2; i++)
-			StdOut.print(" ");
-		StdOut.println(pat);
+			System.out.print(" ");
+		System.out.println(pat);
 	}
 }
