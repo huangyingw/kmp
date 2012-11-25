@@ -1,27 +1,3 @@
-/***************************************************************
- * 
- * Compilation: javac KMP.java Execution: java KMP pattern text
- * 
- * Reads in two strings, the pattern and the input text, and searches for the
- * pattern in the input text using the KMP algorithm.
- * 
- * % java KMP abracadabra abacadabrabracabracadabrabrabracad text:
- * abacadabrabracabracadabrabrabracad pattern: abracadabra
- * 
- * % java KMP rab abacadabrabracabracadabrabrabracad text:
- * abacadabrabracabracadabrabrabracad pattern: rab
- * 
- * % java KMP bcara abacadabrabracabracadabrabrabracad text:
- * abacadabrabracabracadabrabrabracad pattern: bcara
- * 
- * % java KMP rabrabracad abacadabrabracabracadabrabrabracad text:
- * abacadabrabracabracadabrabrabracad pattern: rabrabracad
- * 
- * % java KMP abacad abacadabrabracabracadabrabrabracad text:
- * abacadabrabracabracadabrabrabracad pattern: abacad
- * 
- ***************************************************************/
-
 public class kmp {
 	private final int R; // the radix
 	private int[][] dfa; // the KMP automoton
